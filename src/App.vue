@@ -1,12 +1,25 @@
 <template>
-  <div id="app"></div>
+  <div id="app">
+    <AppHeader :linksArray="headerNavLinks" />
+  </div>
 </template>
 
 <script>
+import AppHeader from "./components/AppHeader.vue";
+
 export default {
   name: "App",
-  components: {},
+  components: {
+    AppHeader,
+  },
+  data() {
+    return {
+      headerNavLinks: ["Home", "Pages", "Courses", "Features", "Blog", "Shop"],
+    };
+  },
 };
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+@import "./style/common.scss";
+</style>
