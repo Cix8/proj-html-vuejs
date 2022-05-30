@@ -5,10 +5,10 @@
       <div class="left-col">
         <div class="text">
           <h2>Complete Your Dreams in JavaS Programming</h2>
-          <small>
+          <span>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque
             minus necessitatibus, sint at repellat tempora aut commodi eius.
-          </small>
+          </span>
         </div>
         <div class="btn-container">
           <button>
@@ -52,7 +52,7 @@ export default {
   .general-container {
     position: relative;
     z-index: 2;
-    width: 80%;
+    width: 75%;
     margin: 0 auto;
     padding: 2rem 0;
     display: flex;
@@ -65,38 +65,40 @@ export default {
     }
 
     .text {
+      width: 85%;
       padding-right: 3rem;
       margin-bottom: 1.5rem;
-      font-size: 1.8rem;
+      font-size: 1.6rem;
+
       h2 {
-        width: 85%;
         margin-bottom: 1.5rem;
       }
-      small {
+      span {
+        font-size: 1.3rem;
         line-height: 2.8rem;
       }
     }
 
     .btn-container {
       button {
-        min-width: 40%;
+        min-width: 50%;
         padding: 1rem 0;
         border: 0;
-        border-radius: 10px;
+        border-radius: 5px;
         background-color: #22ad96;
         color: #fefefe;
         vertical-align: middle;
+        font-size: 1.1rem;
 
         i {
-          font-size: 1.2rem;
           vertical-align: middle;
         }
 
         a {
           display: inline-block;
           margin-left: 0.8rem;
+          vertical-align: middle;
           font-weight: bold;
-          font-size: 0.9rem;
         }
       }
     }

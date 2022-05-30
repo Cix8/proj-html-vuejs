@@ -47,7 +47,7 @@ header {
   background-color: #f0efef;
 
   .general-container {
-    width: 80%;
+    width: 75%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -83,11 +83,12 @@ header {
       .col-right {
         width: 35%;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
 
         .icons-container {
           width: 15%;
+          margin: 0 auto;
           display: flex;
           justify-content: space-between;
           font-size: 1.1rem;
@@ -100,8 +101,22 @@ header {
         }
 
         .search-container {
+          justify-self: flex-end;
           display: flex;
           align-items: center;
+          border: 1px solid transparent;
+
+          &:focus-within {
+            border: 1px solid #01aa51;
+          }
+
+          .input-container input {
+            width: 150px;
+          }
+
+          .input-container input:focus-visible {
+            outline: 0;
+          }
 
           .input-container input,
           .search-icon i {
