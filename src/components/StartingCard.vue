@@ -9,7 +9,7 @@
       />
     </div>
     <div class="card-title">
-      <h4>{{ thisObj.title }}</h4>
+      <h3>{{ thisObj.title }}</h3>
     </div>
     <div class="card-text">
       <span>{{ thisObj.text }}</span>
@@ -37,14 +37,14 @@ li {
   .card-image {
     width: 200px;
     height: 200px;
-    margin: 3rem auto;
+    margin: 2.5rem auto;
 
     img {
       object-fit: contain;
     }
   }
   .card-title {
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
   }
 
   .card-text {
