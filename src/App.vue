@@ -13,10 +13,11 @@
           </div>
         </div>
         <ul class="card-list">
-          <StartingCard />
-          <StartingCard />
-          <StartingCard />
-          <StartingCard />
+          <StartingCard
+            v-for="card in startingCards"
+            :key="card.image"
+            :thisObj="card"
+          />
         </ul>
       </section>
     </main>
@@ -38,6 +39,28 @@ export default {
   data() {
     return {
       headerNavLinks: ["Home", "Pages", "Courses", "Features", "Blog", "Shop"],
+      startingCards: [
+        {
+          image: "01",
+          title: "Idea Discussion",
+          text: "Get teamed up with the specialists who work and teach coding for years at famous university",
+        },
+        {
+          image: "02",
+          title: "Web Development",
+          text: "Get teamed up with the specialists who work and teach coding for years at famous university",
+        },
+        {
+          image: "03",
+          title: "System Administration",
+          text: "Get teamed up with the specialists who work and teach coding for years at famous university",
+        },
+        {
+          image: "04",
+          title: "Graphic Design",
+          text: "Get teamed up with the specialists who work and teach coding for years at famous university",
+        },
+      ],
     };
   },
 };
