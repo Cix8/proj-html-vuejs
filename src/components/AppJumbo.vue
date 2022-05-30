@@ -74,7 +74,7 @@ export default {
         margin-bottom: 1.5rem;
       }
       span {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         line-height: 2.8rem;
       }
     }

@@ -117,12 +117,11 @@ export default {
 
 #app {
   main {
-    padding-bottom: 5rem;
     width: 80%;
     margin: 0 auto;
 
     .starting {
-      padding-top: 5rem;
+      padding: 5rem 0;
       text-align: center;
       .title {
         .secondary-title {
@@ -150,8 +149,8 @@ export default {
     }
 
     .about-us {
-      padding-top: 5rem;
-      height: 500px;
+      padding: 5rem 0;
+      height: 650px;
       display: flex;
 
       &_image {
@@ -175,9 +174,9 @@ export default {
           left: 0%;
           width: 70%;
           height: 80%;
-          background-color: #b6b8d1;
-          mask: url("./assets/images/underlay-shape-grey.svg") no-repeat;
-          mask-size: contain;
+          background-image: url("./assets/images/underlay-shape-lilla.svg");
+          background-repeat: no-repeat;
+          background-size: contain;
         }
       }
 
