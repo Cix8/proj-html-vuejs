@@ -87,10 +87,10 @@ header {
         align-items: center;
 
         .icons-container {
-          width: 15%;
-          margin: 0 auto;
           display: flex;
           justify-content: space-between;
+          flex-grow: 1;
+          padding: 0 2rem;
           font-size: 1.1rem;
 
           li {

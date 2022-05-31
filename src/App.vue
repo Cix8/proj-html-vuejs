@@ -7,6 +7,7 @@
       :aboutUsOptionsArray="aboutUsDetails"
       :thisCoursesData="aboutUsData"
       :thisFeaturedCourses="featuredCourses"
+      :thisEventsArray="eventsArray"
     />
   </div>
 </template>
@@ -151,6 +152,56 @@ export default {
           statics: {
             lessons: "14",
             students: "76",
+          },
+        },
+      ],
+      eventsArray: [
+        {
+          title: "Storytelling Workshop",
+          location: "Texas, US",
+          date: {
+            day: "22",
+            month: "November",
+          },
+        },
+        {
+          title: "Painting Art Contest 2020",
+          location: "New York, US",
+          date: {
+            day: "10",
+            month: "October",
+          },
+        },
+        {
+          title: "International Art Fair 2020",
+          location: "Hamburg, Germany",
+          date: {
+            day: "23",
+            month: "November",
+          },
+        },
+        {
+          title: "Street Performance: Call for Artist",
+          location: "Illinois, US",
+          date: {
+            day: "15",
+            month: "December",
+          },
+        },
+        {
+          title: "Consumer Food Safety Education Conference",
+          location: "Illinois, US",
+          date: {
+            day: "22",
+            month: "July",
+          },
+        },
+        {
+          title: "How meditation improve your mental health?",
+          location: "Dubai",
+          date: {
+            day: "12",
+            month: "August",
           },
         },
       ],

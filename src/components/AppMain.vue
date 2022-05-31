@@ -168,24 +168,54 @@
         </div>
       </div>
     </section>
+    <section class="events">
+      <div class="top">
+        <div class="title">
+          <div class="secondary-title">
+            <span>GET IN CONTACT NOW</span>
+          </div>
+          <div class="primary-title">
+            <h2>Upcoming <span>Events</span></h2>
+          </div>
+        </div>
+      </div>
+      <div class="contents">
+        <ul class="contents-list">
+          <AppEvent
+            v-for="(event, index) in thisEventsArray"
+            :key="index"
+            :thisEvent="event"
+          />
+        </ul>
+      </div>
+      <div class="bottom">
+        <span
+          >Exicted about our events?
+          <a>View all events <i class="fas fa-long-arrow-alt-right"></i></a
+        ></span>
+      </div>
+    </section>
   </main>
 </template>
 
 <script>
 import StartingCard from "./StartingCard.vue";
 import FeaturedCoursesCard from "./FeaturedCoursesCard.vue";
+import AppEvent from "./AppEvent.vue";
 
 export default {
   name: "AppMain",
   components: {
     StartingCard,
     FeaturedCoursesCard,
+    AppEvent,
   },
   props: {
     staringCardsArray: Array,
     aboutUsOptionsArray: Array,
     thisCoursesData: Array,
     thisFeaturedCourses: Array,
+    thisEventsArray: Array,
   },
   data() {
     return {
@@ -547,6 +577,53 @@ main {
             width: 80%;
           }
         }
+      }
+    }
+  }
+
+  .events {
+    .top {
+      .title {
+        padding: 5rem 2rem;
+        text-align: center;
+
+        .secondary-title {
+          margin-bottom: 2rem;
+          color: #959999;
+        }
+
+        .primary-title {
+          color: #3f3a64;
+
+          h2 {
+            font-size: 3rem;
+          }
+
+          span {
+            font-weight: lighter;
+            color: #22ad96;
+          }
+        }
+      }
+    }
+
+    .contents {
+      &-list {
+        display: flex;
+        flex-wrap: wrap;
+      }
+    }
+
+    .bottom {
+      padding: 5rem;
+      text-align: center;
+      font-size: 1.1rem;
+      color: #959999;
+
+      a {
+        font-weight: bold;
+        color: #22ad96;
+        cursor: pointer;
       }
     }
   }
