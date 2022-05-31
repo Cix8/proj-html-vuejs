@@ -106,7 +106,218 @@
             <h2>Latest Featured <span>Courses</span></h2>
           </div>
         </div>
-        <ul class="courses-list"></ul>
+        <ul class="courses-list">
+          <li>
+            <div class="card-img">
+              <img src="./assets/images/stock-full-hd-03-480x298.jpg" alt="" />
+              <div class="price">
+                <span>$26.00</span>
+              </div>
+            </div>
+            <div class="card-data">
+              <div class="profile">
+                <div class="profile-icon">
+                  <img
+                    src="./assets/images/73ee246daf47502812ccefc84bf02898.jpeg"
+                    alt=""
+                  />
+                </div>
+                <div class="profile-name">
+                  <span>Blanche Fields</span>
+                </div>
+              </div>
+              <div class="card-title">
+                <h3>Leaning to Write as a Professional Author</h3>
+              </div>
+            </div>
+            <div class="card-info">
+              <div class="container">
+                <i class="far fa-clipboard"></i>
+                <span>20 Lessons</span>
+              </div>
+              <div class="container">
+                <i class="far fa-user"></i>
+                <span>50 Students</span>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="card-img">
+              <img src="./assets/images/stock-full-hd-03-480x298.jpg" alt="" />
+              <div class="price">
+                <span>Free</span>
+              </div>
+            </div>
+            <div class="card-data">
+              <div class="profile">
+                <div class="profile-icon">
+                  <img
+                    src="./assets/images/73ee246daf47502812ccefc84bf02898.jpeg"
+                    alt=""
+                  />
+                </div>
+                <div class="profile-name">
+                  <span>Blanche Fields</span>
+                </div>
+              </div>
+              <div class="card-title">
+                <h3>Leaning to Write as a Professional Author</h3>
+              </div>
+            </div>
+            <div class="card-info">
+              <div class="container">
+                <i class="far fa-clipboard"></i>
+                <span>20 Lessons</span>
+              </div>
+              <div class="container">
+                <i class="far fa-user"></i>
+                <span>50 Students</span>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="card-img">
+              <img src="./assets/images/stock-full-hd-03-480x298.jpg" alt="" />
+              <div class="price">
+                <span>$26.00</span>
+              </div>
+            </div>
+            <div class="card-data">
+              <div class="profile">
+                <div class="profile-icon">
+                  <img
+                    src="./assets/images/73ee246daf47502812ccefc84bf02898.jpeg"
+                    alt=""
+                  />
+                </div>
+                <div class="profile-name">
+                  <span>Blanche Fields</span>
+                </div>
+              </div>
+              <div class="card-title">
+                <h3>Leaning to Write as a Professional Author</h3>
+              </div>
+            </div>
+            <div class="card-info">
+              <div class="container">
+                <i class="far fa-clipboard"></i>
+                <span>20 Lessons</span>
+              </div>
+              <div class="container">
+                <i class="far fa-user"></i>
+                <span>50 Students</span>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="card-img">
+              <img src="./assets/images/stock-full-hd-03-480x298.jpg" alt="" />
+              <div class="price">
+                <span>$26.00</span>
+              </div>
+            </div>
+            <div class="card-data">
+              <div class="profile">
+                <div class="profile-icon">
+                  <img
+                    src="./assets/images/73ee246daf47502812ccefc84bf02898.jpeg"
+                    alt=""
+                  />
+                </div>
+                <div class="profile-name">
+                  <span>Blanche Fields</span>
+                </div>
+              </div>
+              <div class="card-title">
+                <h3>Leaning to Write as a Professional Author</h3>
+              </div>
+            </div>
+            <div class="card-info">
+              <div class="container">
+                <i class="far fa-clipboard"></i>
+                <span>20 Lessons</span>
+              </div>
+              <div class="container">
+                <i class="far fa-user"></i>
+                <span>50 Students</span>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="card-img">
+              <img src="./assets/images/stock-full-hd-03-480x298.jpg" alt="" />
+              <div class="price">
+                <span>$26.00</span>
+              </div>
+            </div>
+            <div class="card-data">
+              <div class="profile">
+                <div class="profile-icon">
+                  <img
+                    src="./assets/images/73ee246daf47502812ccefc84bf02898.jpeg"
+                    alt=""
+                  />
+                </div>
+                <div class="profile-name">
+                  <span>Blanche Fields</span>
+                </div>
+              </div>
+              <div class="card-title">
+                <h3>Leaning to Write as a Professional Author</h3>
+              </div>
+            </div>
+            <div class="card-info">
+              <div class="container">
+                <i class="far fa-clipboard"></i>
+                <span>20 Lessons</span>
+              </div>
+              <div class="container">
+                <i class="far fa-user"></i>
+                <span>50 Students</span>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="card-img">
+              <img src="./assets/images/stock-full-hd-03-480x298.jpg" alt="" />
+              <div class="price">
+                <span>$26.00</span>
+              </div>
+            </div>
+            <div class="card-data">
+              <div class="profile">
+                <div class="profile-icon">
+                  <img
+                    src="./assets/images/73ee246daf47502812ccefc84bf02898.jpeg"
+                    alt=""
+                  />
+                </div>
+                <div class="profile-name">
+                  <span>Blanche Fields</span>
+                </div>
+              </div>
+              <div class="card-title">
+                <h3>Leaning to Write as a Professional Author</h3>
+              </div>
+            </div>
+            <div class="card-info">
+              <div class="container">
+                <i class="far fa-clipboard"></i>
+                <span>20 Lessons</span>
+              </div>
+              <div class="container">
+                <i class="far fa-user"></i>
+                <span>50 Students</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="btn-container">
+          <button class="courses-btn">
+            <a>View all courses</a>
+            <i class="fas fa-long-arrow-alt-right"></i>
+          </button>
+        </div>
       </section>
     </main>
   </div>
@@ -326,6 +537,8 @@ export default {
     }
 
     .featured-courses {
+      padding-bottom: 5rem;
+
       .title {
         text-align: center;
         padding: 2rem;
@@ -345,6 +558,104 @@ export default {
           span {
             font-weight: lighter;
             color: #22ad96;
+          }
+        }
+      }
+
+      .courses-list {
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 3rem;
+
+        li {
+          position: relative;
+          width: calc(100% / 3);
+          padding: 2.5rem;
+
+          .card-img {
+            position: relative;
+            margin-bottom: 1rem;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            overflow: hidden;
+
+            .price {
+              position: absolute;
+              top: 0;
+              right: 0;
+              padding: 0.5rem 1rem;
+              border-bottom-left-radius: 10px;
+              background-color: #22ad96;
+              font-weight: bold;
+              color: #fefefe;
+            }
+          }
+
+          .card-data {
+            width: 70%;
+
+            .profile {
+              display: flex;
+              align-items: center;
+
+              &-icon {
+                width: 32px;
+                margin: 0.5rem;
+                border-radius: 50%;
+                overflow: hidden;
+              }
+
+              &-name {
+                color: #959999;
+              }
+            }
+
+            .card-title {
+              padding: 0.5rem 0.7rem 2rem;
+            }
+          }
+
+          .card-info {
+            display: flex;
+            padding-left: 0.7rem;
+            color: #959999;
+
+            .container {
+              margin-right: 1rem;
+
+              span {
+                display: inline-block;
+                margin-left: 0.5rem;
+                font-size: 0.8rem;
+                vertical-align: middle;
+              }
+            }
+          }
+        }
+      }
+
+      .btn-container {
+        text-align: center;
+
+        .courses-btn {
+          min-width: 20%;
+          padding: 1rem 0;
+          border: 0;
+          border-radius: 5px;
+          background-color: #22ad96;
+          color: #fefefe;
+          vertical-align: middle;
+          font-size: 1.1rem;
+
+          i {
+            display: inline-block;
+            margin-left: 0.8rem;
+            vertical-align: middle;
+          }
+
+          a {
+            vertical-align: middle;
+            font-weight: bold;
           }
         }
       }
