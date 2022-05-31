@@ -1,0 +1,126 @@
+<template>
+  <li>
+    <div class="card-img">
+      <img
+        :src="
+          thisCard.image[0] !== 'h'
+            ? require('../assets/images/course-' +
+                thisCard.image +
+                '-480x298.jpg')
+            : require('../assets/images/stock-full-' +
+                thisCard.image +
+                '-480x298.jpg')
+        "
+        :alt="thisCard.name"
+      />
+      <div class="price">
+        <span>{{
+          isNaN(thisCard.price[0]) ? thisCard.price : "$" + thisCard.price
+        }}</span>
+      </div>
+    </div>
+    <div class="card-data">
+      <div class="profile">
+        <div class="profile-icon">
+          <img
+            :src="require('../assets/images/' + thisCard.avatar + '.jpeg')"
+            :alt="thisCard.name"
+          />
+        </div>
+        <div class="profile-name">
+          <span>{{ thisCard.name }}</span>
+        </div>
+      </div>
+      <div class="card-title">
+        <h3>{{ thisCard.text }}</h3>
+      </div>
+    </div>
+    <div class="card-info">
+      <div class="container">
+        <i class="far fa-clipboard"></i>
+        <span>{{ thisCard.statics.lessons + " Lessons" }}</span>
+      </div>
+      <div class="container">
+        <i class="far fa-user"></i>
+        <span>{{ thisCard.statics.students + " Students" }}</span>
+      </div>
+    </div>
+  </li>
+</template>
+
+<script>
+export default {
+  name: "FeaturedCoursesCard",
+  props: {
+    thisCard: Object,
+  },
+};
+</script>
+
+<style lang="scss" scoped>
+li {
+  position: relative;
+  width: calc(100% / 3);
+  padding: 2.5rem;
+
+  .card-img {
+    position: relative;
+    margin-bottom: 1rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    overflow: hidden;
+
+    .price {
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 0.5rem 1rem;
+      border-bottom-left-radius: 10px;
+      background-color: #22ad96;
+      font-weight: bold;
+      color: #fefefe;
+    }
+  }
+
+  .card-data {
+    width: 90%;
+
+    .profile {
+      display: flex;
+      align-items: center;
+
+      &-icon {
+        width: 32px;
+        margin: 0.5rem;
+        border-radius: 50%;
+        overflow: hidden;
+      }
+
+      &-name {
+        color: #959999;
+      }
+    }
+
+    .card-title {
+      padding: 0.5rem 0.7rem 2rem;
+    }
+  }
+
+  .card-info {
+    display: flex;
+    padding-left: 0.7rem;
+    color: #959999;
+
+    .container {
+      margin-right: 1rem;
+
+      span {
+        display: inline-block;
+        margin-left: 0.5rem;
+        font-size: 0.8rem;
+        vertical-align: middle;
+      }
+    }
+  }
+}
+</style>
