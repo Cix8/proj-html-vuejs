@@ -21,50 +21,92 @@
         </ul>
       </section>
       <section class="about-us">
-        <div class="about-us_image">
-          <div class="img-container">
-            <img src="./assets/images/about-us-03-image-01.png" alt="" />
-          </div>
-          <div class="overlay"></div>
-        </div>
-        <div class="contents">
-          <div class="title">
-            <div class="secondary-title">
-              <span>DREAM WITH MAXCOACH</span>
+        <div class="top">
+          <div class="top_image">
+            <div class="img-container">
+              <img src="./assets/images/about-us-03-image-01.png" alt="" />
             </div>
-            <div class="primary-title">
-              <h2>Construct A <span>STUNNING</span> Career Perspective</h2>
+            <div class="overlay"></div>
+          </div>
+          <div class="top_contents">
+            <div class="title">
+              <div class="secondary-title">
+                <span>DREAM WITH MAXCOACH</span>
+              </div>
+              <div class="primary-title">
+                <h2>Construct A <span>STUNNING</span> Career Perspective</h2>
+              </div>
+            </div>
+            <div class="contents-list">
+              <ul>
+                <li class="active">
+                  <div class="text">
+                    <a
+                      >Multiple Platforms Supported for Teaching &amp;
+                      Studing</a
+                    >
+                  </div>
+                  <div class="icon-container">
+                    <div class="icon close-icon"></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="text">
+                    <a
+                      >Multiple Platforms Supported for Teaching &amp;
+                      Studing</a
+                    >
+                  </div>
+                  <div class="icon-container">
+                    <div class="icon add-icon"></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="text">
+                    <a
+                      >Multiple Platforms Supported for Teaching &amp;
+                      Studing</a
+                    >
+                  </div>
+                  <div class="icon-container">
+                    <div class="icon add-icon"></div>
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
-          <div class="contents-list">
-            <ul>
-              <li class="active">
-                <div class="text">
-                  <a>Multiple Platforms Supported for Teaching &amp; Studing</a>
-                </div>
-                <div class="icon-container">
-                  <div class="icon close-icon"></div>
-                </div>
-              </li>
-              <li>
-                <div class="text">
-                  <a>Multiple Platforms Supported for Teaching &amp; Studing</a>
-                </div>
-                <div class="icon-container">
-                  <div class="icon add-icon"></div>
-                </div>
-              </li>
-              <li>
-                <div class="text">
-                  <a>Multiple Platforms Supported for Teaching &amp; Studing</a>
-                </div>
-                <div class="icon-container">
-                  <div class="icon add-icon"></div>
-                </div>
-              </li>
-            </ul>
+        </div>
+        <div class="bottom">
+          <ul class="data-list">
+            <li>
+              <span>1.926</span>
+              <strong>FINISHED SESSIONS</strong>
+            </li>
+            <li>
+              <span>1.926</span>
+              <strong>FINISHED SESSIONS</strong>
+            </li>
+            <li>
+              <span>1.926</span>
+              <strong>FINISHED SESSIONS</strong>
+            </li>
+            <li>
+              <span>1.926</span>
+              <strong>FINISHED SESSIONS</strong>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="featured-courses">
+        <div class="title">
+          <div class="secondary-title">
+            <span>CHOOSE WHERE YOU'D LIKE TO BEGIN</span>
+          </div>
+          <div class="primary-title">
+            <h2>Latest Featured <span>Courses</span></h2>
           </div>
         </div>
+        <ul class="courses-list"></ul>
       </section>
     </main>
   </div>
@@ -121,11 +163,12 @@ export default {
     margin: 0 auto;
 
     .starting {
-      padding: 5rem 0;
+      padding-top: 3rem;
       text-align: center;
       .title {
+        padding: 2rem;
         .secondary-title {
-          margin-bottom: 0.5rem;
+          margin-bottom: 1.5rem;
           color: #959999;
         }
 
@@ -149,105 +192,159 @@ export default {
     }
 
     .about-us {
-      padding: 5rem 0;
-      height: 650px;
-      display: flex;
+      padding-top: 5rem;
 
-      &_image {
-        position: relative;
-        width: 50%;
-        height: 100%;
-
-        .img-container {
-          position: relative;
-          height: 100%;
-          z-index: 2;
-
-          img {
-            object-fit: contain;
-          }
-        }
-
-        .overlay {
-          position: absolute;
-          top: 20%;
-          left: 0%;
-          width: 70%;
-          height: 80%;
-          background-image: url("./assets/images/underlay-shape-lilla.svg");
-          background-repeat: no-repeat;
-          background-size: contain;
-        }
-      }
-
-      .contents {
+      .top {
+        height: 650px;
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 50%;
-        padding: 1rem;
-        background-color: #f0efef;
 
-        .title {
-          .secondary-title {
-            margin-bottom: 0.5rem;
-            color: #959999;
+        &_image {
+          position: relative;
+          width: 50%;
+          height: 100%;
+
+          .img-container {
+            position: relative;
+            height: 100%;
+            z-index: 2;
+
+            img {
+              object-fit: contain;
+            }
           }
 
-          .primary-title {
-            color: #3f3a64;
-
-            h2 {
-              font-size: 2.5rem;
-            }
-
-            span {
-              font-weight: lighter;
-              color: #22ad96;
-            }
+          .overlay {
+            position: absolute;
+            top: 20%;
+            left: -10%;
+            width: 70%;
+            height: 80%;
+            background-image: url("./assets/images/underlay-shape-lilla.svg");
+            background-repeat: no-repeat;
+            background-size: contain;
           }
         }
 
-        &-list {
-          ul {
-            li {
-              display: flex;
-              justify-content: space-between;
-              align-items: center;
-              padding: 0.7rem 1.3rem;
-              background-color: #fefefe;
-              font-weight: bold;
+        &_contents {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          width: 50%;
+          padding: 1rem;
+          background-color: #f0efef;
 
-              &:not(&:last-child) {
-                margin-bottom: 0.7rem;
+          .title {
+            .secondary-title {
+              margin-bottom: 1.5rem;
+              color: #959999;
+            }
+
+            .primary-title {
+              color: #3f3a64;
+
+              h2 {
+                font-size: 2.5rem;
               }
 
-              &.active {
-                background-color: #22ad96;
-                color: #fefefe;
+              span {
+                font-weight: lighter;
+                color: #22ad96;
               }
+            }
+          }
 
-              .icon-container {
-                width: 30px;
-                height: 30px;
-                background-color: #959999;
+          .contents-list {
+            ul {
+              li {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0.7rem 1.3rem;
+                background-color: #fefefe;
+                font-weight: bold;
 
-                .icon {
-                  width: 100%;
-                  height: 100%;
+                &:not(&:last-child) {
+                  margin-bottom: 0.7rem;
+                }
 
-                  &.add-icon {
-                    background-color: #fefefe;
-                    mask: url("./assets/images/add.svg") no-repeat;
-                  }
+                &.active {
+                  background-color: #22ad96;
+                  color: #fefefe;
+                }
 
-                  &.close-icon {
-                    background-color: #fefefe;
-                    mask: url("./assets/images/close.svg") no-repeat center;
+                .icon-container {
+                  width: 30px;
+                  height: 30px;
+                  background-color: #959999;
+
+                  .icon {
+                    width: 100%;
+                    height: 100%;
+
+                    &.add-icon {
+                      background-color: #fefefe;
+                      mask: url("./assets/images/add.svg") no-repeat;
+                    }
+
+                    &.close-icon {
+                      background-color: #fefefe;
+                      mask: url("./assets/images/close.svg") no-repeat center;
+                    }
                   }
                 }
               }
             }
+          }
+        }
+      }
+
+      .bottom {
+        padding: 10rem 0;
+        .data-list {
+          display: flex;
+          justify-content: space-around;
+
+          li {
+            text-align: center;
+            padding: 2rem;
+            background-color: #f0efef;
+
+            span {
+              display: inline-block;
+              margin-bottom: 1rem;
+              font-weight: bolder;
+              font-size: 2.5rem;
+              color: #22ad96;
+            }
+
+            strong {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+
+    .featured-courses {
+      .title {
+        text-align: center;
+        padding: 2rem;
+
+        .secondary-title {
+          margin-bottom: 1.5rem;
+          color: #959999;
+        }
+
+        .primary-title {
+          color: #3f3a64;
+
+          h2 {
+            font-size: 2.5rem;
+          }
+
+          span {
+            font-weight: lighter;
+            color: #22ad96;
           }
         }
       }
