@@ -37,23 +37,26 @@
           <div class="contents-list">
             <ul>
               <li
-                v-for="card in aboutUsOptionsArray"
-                :key="card.id"
-                :class="{ active: currentActive === card.id }"
+                v-for="option in aboutUsOptionsArray"
+                :key="option.id"
+                :class="{ active: currentActive === option.id }"
                 @click="
-                  currentActive === card.id
+                  currentActive === option.id
                     ? (currentActive = '')
-                    : (currentActive = card.id)
+                    : (currentActive = option.id)
                 "
               >
                 <div class="text">
-                  <a>{{ card.title }}</a>
+                  <a>{{ option.title }}</a>
                 </div>
-                <div class="icon-container">
+                <div
+                  class="icon-container"
+                  :class="{ active: currentActive === option.id }"
+                >
                   <div
                     class="icon"
                     :class="
-                      currentActive === card.id ? 'close-icon' : 'add-icon'
+                      currentActive === option.id ? 'close-icon' : 'add-icon'
                     "
                   ></div>
                 </div>
@@ -88,10 +91,81 @@
         />
       </ul>
       <div class="btn-container">
-        <button class="courses-btn">
+        <button class="green-btn">
           <a>View all courses</a>
           <i class="fas fa-long-arrow-alt-right"></i>
         </button>
+      </div>
+    </section>
+    <section class="main-banner">
+      <div class="col-left">
+        <div class="title">
+          <div class="secondary-title">
+            <span>WHY ESITATE TO REGISTER?</span>
+          </div>
+          <div class="primary-title">
+            <h2>Learn At Your Own <span>Pace</span></h2>
+          </div>
+        </div>
+        <div class="options">
+          <ul class="options-list fa-ul">
+            <li>
+              <span class="fa-li"><i class="fas fa-check"></i></span> Select &
+              customize courses to your preferences
+            </li>
+            <li>
+              <span class="fa-li"><i class="fas fa-check"></i></span>Change the
+              tutor and make arrangements
+            </li>
+            <li>
+              <span class="fa-li"><i class="fas fa-check"></i></span>Patercipate
+              in events to join others
+            </li>
+            <li>
+              <span class="fa-li"><i class="fas fa-check"></i></span>Get the
+              desired certificate delivered at the house
+            </li>
+          </ul>
+          <div class="btn-container">
+            <button class="green-btn">
+              <a>Get started for Free</a>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-right">
+        <div class="img-container">
+          <img src="../assets/images/home-5-image-01.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <section class="main-banner reverse">
+      <div class="col-left">
+        <div class="title">
+          <div class="secondary-title">
+            <span>WHAT ARE YOU LOOKING FOR?</span>
+          </div>
+          <div class="primary-title">
+            <h2>Learn on your <span>Mobile</span> anytime!</h2>
+          </div>
+        </div>
+        <div class="text">
+          <p>
+            Save lessons for later and revise or write notes at any time and on
+            multiple devices on your way. Never interfere with activities of
+            enjoyment or other precious moments.
+          </p>
+        </div>
+        <div class="btn-container">
+          <button class="green-btn">
+            <a>Download Our App</a>
+          </button>
+        </div>
+      </div>
+      <div class="col-right">
+        <div class="img-container">
+          <img src="../assets/images/home-5-image-02.png" alt="" />
+        </div>
       </div>
     </section>
   </main>
@@ -165,7 +239,7 @@ main {
       &_image {
         position: relative;
         width: 50%;
-        height: 100%;
+        height: 90%;
 
         .img-container {
           position: relative;
@@ -242,7 +316,12 @@ main {
               .icon-container {
                 width: 30px;
                 height: 30px;
+                border-radius: 50%;
                 background-color: #959999;
+
+                &.active {
+                  background-color: #fefefe;
+                }
 
                 .icon {
                   width: 100%;
@@ -254,7 +333,7 @@ main {
                   }
 
                   &.close-icon {
-                    background-color: #fefefe;
+                    background-color: #22ad96;
                     mask: url("../assets/images/close.svg") no-repeat center;
                   }
                 }
@@ -327,7 +406,7 @@ main {
     .btn-container {
       text-align: center;
 
-      .courses-btn {
+      .green-btn {
         min-width: 20%;
         padding: 1rem 0;
         border: 0;
@@ -346,6 +425,127 @@ main {
         a {
           vertical-align: middle;
           font-weight: bold;
+        }
+      }
+    }
+  }
+
+  .main-banner {
+    min-height: 500px;
+    display: flex;
+    padding-top: 5rem;
+
+    .col-left {
+      width: 40%;
+
+      .title {
+        padding: 2rem;
+        .secondary-title {
+          margin-bottom: 2rem;
+          color: #959999;
+        }
+
+        .primary-title {
+          color: #3f3a64;
+
+          h2 {
+            font-size: 3rem;
+          }
+
+          span {
+            font-weight: lighter;
+            color: #22ad96;
+          }
+        }
+      }
+
+      .options {
+        padding: 1rem;
+
+        .options-list {
+          li {
+            margin-bottom: 1.5rem;
+
+            span {
+              font-size: 1.2rem;
+              color: #22ad96;
+            }
+          }
+        }
+
+        .btn-container {
+          padding: 1rem 0.6rem 0;
+
+          .green-btn {
+            min-width: 50%;
+            padding: 1rem 0;
+            border: 0;
+            border-radius: 5px;
+            background-color: #22ad96;
+            color: #fefefe;
+
+            a {
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+
+    .col-right {
+      width: 60%;
+
+      .img-container {
+        width: 60%;
+        margin: 0 auto;
+        padding: 2rem 0;
+      }
+    }
+
+    &.reverse {
+      flex-direction: row-reverse;
+      align-items: center;
+
+      .col-left {
+        .title {
+          padding: 0;
+          .primary-title {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+          }
+        }
+
+        .text {
+          margin-bottom: 2rem;
+
+          p {
+            line-height: 30px;
+          }
+        }
+
+        .btn-container {
+          padding: 1rem 0;
+
+          .green-btn {
+            min-width: 50%;
+            padding: 1rem 0;
+            border: 0;
+            border-radius: 5px;
+            background-color: #22ad96;
+            color: #fefefe;
+
+            a {
+              font-weight: bold;
+            }
+          }
+        }
+      }
+
+      .col-right {
+        .img-container {
+          img {
+            width: 80%;
+          }
         }
       }
     }
