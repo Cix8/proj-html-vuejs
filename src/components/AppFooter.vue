@@ -28,10 +28,12 @@
       </div>
     </div>
     <div class="credits">
-      <span>&copy;2020 Maxcoach, All Rights reserved</span>
-    </div>
-    <div class="footer-icon">
-      <i class="fas fa-arrow-alt-circle-up"></i>
+      <div class="text">
+        <span>&copy;2020 Maxcoach, All Rights reserved</span>
+      </div>
+      <div class="footer-icon">
+        <i class="fas fa-arrow-alt-circle-up"></i>
+      </div>
     </div>
   </footer>
 </template>
@@ -48,7 +50,6 @@ export default {
 
 <style lang="scss" scoped>
 footer {
-  position: relative;
   .footer-contents {
     position: relative;
     width: 80%;
@@ -94,18 +95,23 @@ footer {
   }
 
   .credits {
+    position: relative;
     padding: 3rem;
-    text-align: center;
     color: #959999;
-  }
 
-  .footer-icon {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    font-size: 3rem;
-    margin: 1.5rem;
-    color: #22ad96;
+    .text {
+      text-align: center;
+    }
+
+    .footer-icon {
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-size: 3rem;
+      margin: 2rem;
+      color: #22ad96;
+      justify-self: end;
+    }
   }
 }
 </style>
