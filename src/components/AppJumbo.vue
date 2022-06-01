@@ -4,7 +4,9 @@
     <div class="general-container">
       <div class="left-col">
         <div class="text">
-          <h2>Complete Your Dreams in JavaS Programming</h2>
+          <h2>
+            Complete Your <span>Dreams</span> in <span>JavaS</span> Programming
+          </h2>
           <span>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque
             minus necessitatibus, sint at repellat tempora aut commodi eius.
@@ -54,9 +56,8 @@ export default {
     z-index: 2;
     width: 75%;
     margin: 0 auto;
-    padding: 2rem 0;
+    padding: 3rem 0;
     display: flex;
-    align-items: center;
 
     .left-col,
     .right-col {
@@ -64,33 +65,41 @@ export default {
       height: 100%;
     }
 
-    .text {
-      width: 85%;
-      padding-right: 3rem;
-      margin-bottom: 1.5rem;
-      font-size: 1.6rem;
-
-      h2 {
+    .left-col {
+      padding: 4rem 0 0;
+      .text {
+        width: 85%;
         margin-bottom: 1.5rem;
-      }
-      span {
-        font-size: 1.2rem;
-        line-height: 2.8rem;
-      }
-    }
+        font-size: 1.9rem;
 
-    .btn-container {
-      .green-btn {
-        min-width: 50%;
+        h2 {
+          max-width: 80%;
+          margin-bottom: 1.5rem;
 
-        i {
-          vertical-align: middle;
+          span {
+            font-size: inherit;
+            word-break: keep-all;
+          }
         }
+        span {
+          font-size: 1.2rem;
+          line-height: 2.8rem;
+        }
+      }
 
-        a {
-          display: inline-block;
-          margin-left: 0.8rem;
-          vertical-align: middle;
+      .btn-container {
+        .green-btn {
+          min-width: 50%;
+
+          i {
+            vertical-align: middle;
+          }
+
+          a {
+            display: inline-block;
+            margin-left: 0.8rem;
+            vertical-align: middle;
+          }
         }
       }
     }

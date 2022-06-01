@@ -227,7 +227,7 @@
                 <p>
                   {{ testimonial.text }}
                 </p>
-                <strong>{{ testimonial.name }}</strong>
+                <strong>{{ testimonial.name.toUpperCase() }}</strong>
                 <span>/ {{ testimonial.occupation }}</span>
               </div>
             </div>
