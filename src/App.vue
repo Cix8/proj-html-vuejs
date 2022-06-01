@@ -210,24 +210,86 @@ export default {
         },
       ],
       testimonialsArray: [
-        {
-          name: "Mina Hollace",
-          occupation: "Freelancer",
-          text: "I am free to learn at my own pace, follow my own schedule and choose the subject you like. Great study portal for people like me.",
-          image: "02",
-        },
-        {
-          name: "Madley Pondor",
-          occupation: "IT Specialist",
-          text: "MaxCoach is my best choice. Their tutors are smart and professional when dealing with students.",
-          image: "04",
-        },
-        {
-          name: "Luvic Dubble",
-          occupation: "Private Tutor",
-          text: "I am happy with their arrangement of lessons and subjects. They reflect a scientific investigation.",
-          image: "01",
-        },
+        [
+          {
+            name: "Mina Hollace",
+            occupation: "Freelancer",
+            text: "I am free to learn at my own pace, follow my own schedule and choose the subject you like. Great study portal for people like me.",
+            image: "02",
+          },
+          {
+            name: "Madley Pondor",
+            occupation: "IT Specialist",
+            text: "MaxCoach is my best choice. Their tutors are smart and professional when dealing with students.",
+            image: "04",
+          },
+          {
+            name: "Luvic Dubble",
+            occupation: "Private Tutor",
+            text: "I am happy with their arrangement of lessons and subjects. They reflect a scientific investigation.",
+            image: "01",
+          },
+        ],
+        [
+          {
+            name: "John Smith",
+            occupation: "Freelancer",
+            text: "MaxCoach is my best choice. Their tutors are smart and professional when dealing with students.",
+            image: "03",
+          },
+          {
+            name: "Luvic Dubble",
+            occupation: "Private Tutor",
+            text: "I am happy with their arrangement of lessons and subjects. They reflect a scientific investigation.",
+            image: "01",
+          },
+          {
+            name: "Mina Hollace",
+            occupation: "Freelancer",
+            text: "I am free to learn at my own pace, follow my own schedule and choose the subject you like. Great study portal for people like me.",
+            image: "02",
+          },
+        ],
+        [
+          {
+            name: "Mina Hollace",
+            occupation: "Freelancer",
+            text: "I am free to learn at my own pace, follow my own schedule and choose the subject you like. Great study portal for people like me.",
+            image: "02",
+          },
+          {
+            name: "Madley Pondor",
+            occupation: "IT Specialist",
+            text: "MaxCoach is my best choice. Their tutors are smart and professional when dealing with students.",
+            image: "04",
+          },
+          {
+            name: "Luvic Dubble",
+            occupation: "Private Tutor",
+            text: "I am happy with their arrangement of lessons and subjects. They reflect a scientific investigation.",
+            image: "01",
+          },
+        ],
+        [
+          {
+            name: "Luvic Dubble",
+            occupation: "Private Tutor",
+            text: "I am free to learn at my own pace, follow my own schedule and choose the subject you like. Great study portal for people like me.",
+            image: "02",
+          },
+          {
+            name: "John Smith",
+            occupation: "Freelancer",
+            text: "MaxCoach is my best choice. Their tutors are smart and professional when dealing with students.",
+            image: "03",
+          },
+          {
+            name: "Madley Pondor",
+            occupation: "IT Specialist",
+            text: "I am happy with their arrangement of lessons and subjects. They reflect a scientific investigation.",
+            image: "04",
+          },
+        ],
       ],
       footerData: [
         {

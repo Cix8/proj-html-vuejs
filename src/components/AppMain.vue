@@ -209,7 +209,7 @@
       <div class="contents">
         <ul class="contents-list">
           <li
-            v-for="testimonial in thisTestimonialsArray"
+            v-for="testimonial in thisTestimonialsArray[currentTestimonials]"
             :key="testimonial.image"
           >
             <div class="container">
@@ -234,10 +234,14 @@
           </li>
         </ul>
         <ul class="circles-list">
-          <li class="active"><i class="fas fa-circle"></i></li>
-          <li><i class="fas fa-circle"></i></li>
-          <li><i class="fas fa-circle"></i></li>
-          <li><i class="fas fa-circle"></i></li>
+          <li
+            v-for="(element, index) in thisTestimonialsArray"
+            :key="index"
+            :class="{ active: currentTestimonials === index }"
+            @click="currentTestimonials = index"
+          >
+            <i class="fas fa-circle"></i>
+          </li>
         </ul>
       </div>
     </section>
@@ -284,6 +288,7 @@ export default {
   data() {
     return {
       currentActive: 0,
+      currentTestimonials: 0,
     };
   },
 };
@@ -756,6 +761,7 @@ main {
           margin: 0 0.5rem;
           font-size: 0.6rem;
           color: #959999;
+          cursor: pointer;
 
           &.active {
             font-size: 1rem;
