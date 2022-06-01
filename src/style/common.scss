@@ -19,3 +19,25 @@ img {
     width: 100%;
     max-height: 100%;
 }
+
+
+// UTILITIES
+.btn-container {
+    .green-btn {
+        padding: 1rem 0;
+        border: 0;
+        border-radius: 5px;
+        color: #fefefe;
+        font-size: 1.1rem;
+        background-color: #22ad96;
+        cursor: pointer;
+
+        a {
+            font-weight: bold;
+        }
+    }
+
+    .green-btn:hover {
+        background-color: #513e5e;
+    }
+}

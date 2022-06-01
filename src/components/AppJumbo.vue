@@ -11,7 +11,7 @@
           </span>
         </div>
         <div class="btn-container">
-          <button>
+          <button class="green-btn">
             <i class="fas fa-download"></i>
             <a>Download free E-book</a>
           </button>
@@ -80,15 +80,8 @@ export default {
     }
 
     .btn-container {
-      button {
+      .green-btn {
         min-width: 50%;
-        padding: 1rem 0;
-        border: 0;
-        border-radius: 5px;
-        background-color: #22ad96;
-        color: #fefefe;
-        vertical-align: middle;
-        font-size: 1.1rem;
 
         i {
           vertical-align: middle;
@@ -98,7 +91,6 @@ export default {
           display: inline-block;
           margin-left: 0.8rem;
           vertical-align: middle;
-          font-weight: bold;
         }
       }
     }

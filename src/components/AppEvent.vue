@@ -76,11 +76,6 @@ li {
 
         .green-btn {
           padding: 0.5rem 2.5rem;
-          border: 0;
-          border-radius: 5px;
-          background-color: #22ad96;
-          color: #fefefe;
-          vertical-align: middle;
           font-size: 0.9rem;
 
           i {
@@ -91,7 +86,6 @@ li {
 
           a {
             vertical-align: middle;
-            font-weight: bold;
           }
         }
       }

@@ -502,13 +502,6 @@ main {
 
       .green-btn {
         min-width: 20%;
-        padding: 1rem 0;
-        border: 0;
-        border-radius: 5px;
-        background-color: #22ad96;
-        color: #fefefe;
-        vertical-align: middle;
-        font-size: 1.1rem;
 
         i {
           display: inline-block;
@@ -518,7 +511,6 @@ main {
 
         a {
           vertical-align: middle;
-          font-weight: bold;
         }
       }
     }
@@ -572,15 +564,6 @@ main {
 
           .green-btn {
             min-width: 50%;
-            padding: 1rem 0;
-            border: 0;
-            border-radius: 5px;
-            background-color: #22ad96;
-            color: #fefefe;
-
-            a {
-              font-weight: bold;
-            }
           }
         }
       }
@@ -622,15 +605,6 @@ main {
 
           .green-btn {
             min-width: 50%;
-            padding: 1rem 0;
-            border: 0;
-            border-radius: 5px;
-            background-color: #22ad96;
-            color: #fefefe;
-
-            a {
-              font-weight: bold;
-            }
           }
         }
       }
@@ -815,16 +789,6 @@ main {
 
       .green-btn {
         min-width: 25%;
-        padding: 1rem 0;
-        border: 0;
-        border-radius: 5px;
-        background-color: #22ad96;
-        color: #fefefe;
-        font-size: 1.1rem;
-
-        a {
-          font-weight: bold;
-        }
       }
     }
   }
