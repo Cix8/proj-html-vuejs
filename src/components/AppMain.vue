@@ -427,6 +427,7 @@ main {
                   width: 30px;
                   height: 30px;
                   border-radius: 50%;
+                  flex-shrink: 0;
                   background-color: #959999;
 
                   &.active {

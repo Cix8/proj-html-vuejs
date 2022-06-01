@@ -15,7 +15,12 @@
         </ul>
         <div class="col-right">
           <ul class="icons-container">
-            <li class="cart"><i class="fas fa-shopping-cart"></i></li>
+            <li class="cart">
+              <i class="fas fa-shopping-cart"></i>
+              <div class="cart-items">
+                <small>0</small>
+              </div>
+            </li>
             <li class="profile"><i class="far fa-user-circle"></i></li>
           </ul>
           <div class="search-container">
@@ -90,12 +95,28 @@ header {
           display: flex;
           justify-content: space-between;
           flex-grow: 1;
-          padding: 0 2rem;
+          padding: 0 1rem;
           font-size: 1.1rem;
 
           li {
             &:first-child {
               align-self: flex-end;
+            }
+
+            &.cart {
+              position: relative;
+
+              .cart-items {
+                position: absolute;
+                top: -25%;
+                right: -10%;
+                transform: translate(+50%, -50%);
+                padding: 0 0.4rem;
+                border-radius: 50%;
+                background-color: #22ad96;
+                font-weight: bold;
+                color: #fefefe;
+              }
             }
           }
         }
