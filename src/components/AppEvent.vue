@@ -37,10 +37,25 @@ li {
   width: 50%;
   padding: 1rem;
 
+  &:hover {
+    .container {
+      border-left-color: #01aa51;
+    }
+
+    .btn-container {
+      .green-btn {
+        background-color: #513e5e;
+      }
+    }
+  }
+
   .container {
     display: flex;
     justify-content: space-between;
     padding: 1rem;
+    border-left: 3px solid transparent;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
     background-color: #f0efef;
 
     .col-left {

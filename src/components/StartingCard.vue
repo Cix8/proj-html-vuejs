@@ -56,9 +56,18 @@ li {
   .card-link {
     color: #96a6a5;
     font-weight: bold;
-    span {
-      display: inline-block;
-      margin-left: 0.5rem;
+
+    a {
+      cursor: pointer;
+
+      span {
+        display: inline-block;
+        margin-left: 0.5rem;
+      }
+    }
+
+    a:hover {
+      color: #22ad96;
     }
   }
 }

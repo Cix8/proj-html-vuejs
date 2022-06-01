@@ -660,8 +660,11 @@ main {
 
       a {
         font-weight: bold;
-        color: #22ad96;
         cursor: pointer;
+
+        &:hover {
+          color: #22ad96;
+        }
       }
     }
   }
@@ -705,7 +708,7 @@ main {
             min-height: 320px;
             padding: 0 1rem 2rem;
             text-align: center;
-            box-shadow: 5px 15px 80px #01afc8;
+            box-shadow: 10px 10px 50px #959999;
 
             .top {
               position: absolute;
