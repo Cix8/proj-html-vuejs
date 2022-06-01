@@ -195,6 +195,52 @@
         ></span>
       </div>
     </section>
+    <section class="testimonials">
+      <div class="top">
+        <div class="title">
+          <div class="secondary-title">
+            <span>PEOPLE ARE PRAISING MAXCOACH</span>
+          </div>
+          <div class="primary-title">
+            <h2>What make they <span>Love us?</span></h2>
+          </div>
+        </div>
+      </div>
+      <div class="contents">
+        <ul class="contents-list">
+          <li
+            v-for="testimonial in thisTestimonialsArray"
+            :key="testimonial.image"
+          >
+            <div class="container">
+              <div class="top">
+                <img
+                  :src="
+                    require('../assets/images/testimonial-avata-' +
+                      testimonial.image +
+                      '.jpg')
+                  "
+                  alt=""
+                />
+              </div>
+              <div class="bottom">
+                <p>
+                  {{ testimonial.text }}
+                </p>
+                <strong>{{ testimonial.name }}</strong>
+                <span>/ {{ testimonial.occupation }}</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <ul class="circles-list">
+          <li class="active"><i class="fas fa-circle"></i></li>
+          <li><i class="fas fa-circle"></i></li>
+          <li><i class="fas fa-circle"></i></li>
+          <li><i class="fas fa-circle"></i></li>
+        </ul>
+      </div>
+    </section>
   </main>
 </template>
 
@@ -216,6 +262,7 @@ export default {
     thisCoursesData: Array,
     thisFeaturedCourses: Array,
     thisEventsArray: Array,
+    thisTestimonialsArray: Array,
   },
   data() {
     return {
@@ -584,7 +631,7 @@ main {
   .events {
     .top {
       .title {
-        padding: 5rem 2rem;
+        padding: 5rem;
         text-align: center;
 
         .secondary-title {
@@ -624,6 +671,103 @@ main {
         font-weight: bold;
         color: #22ad96;
         cursor: pointer;
+      }
+    }
+  }
+
+  .testimonials {
+    .top {
+      .title {
+        padding: 10rem 0 5rem;
+        text-align: center;
+
+        .secondary-title {
+          margin-bottom: 2rem;
+          color: #959999;
+        }
+
+        .primary-title {
+          color: #3f3a64;
+
+          h2 {
+            font-size: 3rem;
+          }
+
+          span {
+            font-weight: lighter;
+            color: #22ad96;
+          }
+        }
+      }
+    }
+
+    .contents {
+      &-list {
+        display: flex;
+
+        li {
+          max-width: calc(100% / 3);
+          padding: 2rem;
+
+          .container {
+            position: relative;
+            min-height: 320px;
+            padding: 0 1rem 2rem;
+            text-align: center;
+            box-shadow: 5px 15px 80px #01afc8;
+
+            .top {
+              position: absolute;
+              top: 0;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              width: 40%;
+
+              img {
+                border-radius: 50%;
+              }
+            }
+
+            .bottom {
+              padding: 8rem 0 0;
+
+              p {
+                width: 90%;
+                margin: 0 auto 2rem;
+              }
+
+              strong {
+                display: block;
+                margin-bottom: 0.5rem;
+                font-size: 0.9rem;
+              }
+
+              span {
+                font-size: 0.9rem;
+                color: #959999;
+              }
+            }
+          }
+        }
+      }
+
+      .circles-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5rem;
+
+        li {
+          display: flex;
+          margin: 0 0.5rem;
+          font-size: 0.7rem;
+          color: #959999;
+
+          &.active {
+            font-size: 0.9rem;
+            color: #000000;
+          }
+        }
       }
     }
   }

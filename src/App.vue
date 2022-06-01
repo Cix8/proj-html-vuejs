@@ -8,6 +8,7 @@
       :thisCoursesData="aboutUsData"
       :thisFeaturedCourses="featuredCourses"
       :thisEventsArray="eventsArray"
+      :thisTestimonialsArray="testimonialsArray"
     />
   </div>
 </template>
@@ -203,6 +204,26 @@ export default {
             day: "12",
             month: "August",
           },
+        },
+      ],
+      testimonialsArray: [
+        {
+          name: "Mina Hollace",
+          occupation: "Freelancer",
+          text: "I am free to learn at my own pace, follow my own schedule and choose the subject you like. Great study portal for people like me.",
+          image: "02",
+        },
+        {
+          name: "Madley Pondor",
+          occupation: "IT Specialist",
+          text: "MaxCoach is my best choice. Their tutors are smart and professional when dealing with students.",
+          image: "04",
+        },
+        {
+          name: "Luvic Dubble",
+          occupation: "Private Tutor",
+          text: "I am hapy with their arrangement of lessons and subjects. They reflect a scientific investigation.",
+          image: "01",
         },
       ],
     };
