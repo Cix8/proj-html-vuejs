@@ -10,6 +10,7 @@
       :thisEventsArray="eventsArray"
       :thisTestimonialsArray="testimonialsArray"
     />
+    <AppFooter :thisFooterData="footerData" :theseSocial="socialIcons" />
   </div>
 </template>
 
@@ -17,6 +18,7 @@
 import AppHeader from "./components/AppHeader.vue";
 import AppJumbo from "./components/AppJumbo.vue";
 import AppMain from "./components/AppMain.vue";
+import AppFooter from "./components/AppFooter.vue";
 
 export default {
   name: "App",
@@ -24,6 +26,7 @@ export default {
     AppHeader,
     AppJumbo,
     AppMain,
+    AppFooter,
   },
   data() {
     return {
@@ -226,6 +229,37 @@ export default {
           image: "01",
         },
       ],
+      footerData: [
+        {
+          title: "Address",
+          links: [
+            "382 NE 191st ST # 87394 Miami, FL 33179-3899",
+            "+1 (305) 547-9909 (9am - 5am EST, Monday - Friday)",
+            "support@maxcoach.com",
+          ],
+        },
+        {
+          title: "Explore",
+          links: [
+            "Start here",
+            "Blog",
+            "About us",
+            "Success story",
+            "Courses",
+            "Contact Us",
+          ],
+        },
+        {
+          title: "Information",
+          links: [
+            "Membership",
+            "Purhase guide",
+            "Privacy policy",
+            "Terms of services",
+          ],
+        },
+      ],
+      socialIcons: ["facebook-square", "twitter", "instagram", "linkedin"],
     };
   },
 };
