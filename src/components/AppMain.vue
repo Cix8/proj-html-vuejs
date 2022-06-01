@@ -241,6 +241,23 @@
         </ul>
       </div>
     </section>
+    <section class="small-banner">
+      <div class="title">
+        <div class="secondary-title">
+          <h3>Start today for getting <span>Online Certifications</span></h3>
+        </div>
+        <div class="primary-title">
+          <h2>You can be your own guiding star with our help!</h2>
+        </div>
+      </div>
+      <div class="btn-container">
+        <div class="btn-container">
+          <button class="green-btn">
+            <a>Get started now</a>
+          </button>
+        </div>
+      </div>
+    </section>
   </main>
 </template>
 
@@ -755,18 +772,58 @@ main {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 5rem;
+        padding: 3rem 5rem 5rem;
 
         li {
           display: flex;
           margin: 0 0.5rem;
-          font-size: 0.7rem;
+          font-size: 0.6rem;
           color: #959999;
 
           &.active {
-            font-size: 0.9rem;
+            font-size: 1rem;
             color: #000000;
           }
+        }
+      }
+    }
+  }
+
+  .small-banner {
+    padding: 2rem 2rem 5rem;
+    text-align: center;
+    color: #3f3a64;
+
+    .secondary-title {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+
+      span {
+        font-weight: lighter;
+        font-size: 1.3rem;
+        color: #22ad96;
+      }
+    }
+
+    .primary-title {
+      margin-bottom: 2rem;
+      font-size: 1.4rem;
+    }
+
+    .btn-container {
+      text-align: center;
+
+      .green-btn {
+        min-width: 25%;
+        padding: 1rem 0;
+        border: 0;
+        border-radius: 5px;
+        background-color: #22ad96;
+        color: #fefefe;
+        font-size: 1.1rem;
+
+        a {
+          font-weight: bold;
         }
       }
     }

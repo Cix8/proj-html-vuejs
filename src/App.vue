@@ -162,7 +162,7 @@ export default {
           location: "Texas, US",
           date: {
             day: "22",
-            month: "November",
+            month: "Nov",
           },
         },
         {
@@ -170,7 +170,7 @@ export default {
           location: "New York, US",
           date: {
             day: "10",
-            month: "October",
+            month: "Oct",
           },
         },
         {
@@ -178,7 +178,7 @@ export default {
           location: "Hamburg, Germany",
           date: {
             day: "23",
-            month: "November",
+            month: "Nov",
           },
         },
         {
@@ -186,7 +186,7 @@ export default {
           location: "Illinois, US",
           date: {
             day: "15",
-            month: "December",
+            month: "Dec",
           },
         },
         {
@@ -194,7 +194,7 @@ export default {
           location: "Illinois, US",
           date: {
             day: "22",
-            month: "July",
+            month: "Jul",
           },
         },
         {
@@ -202,7 +202,7 @@ export default {
           location: "Dubai",
           date: {
             day: "12",
-            month: "August",
+            month: "Aug",
           },
         },
       ],
@@ -222,7 +222,7 @@ export default {
         {
           name: "Luvic Dubble",
           occupation: "Private Tutor",
-          text: "I am hapy with their arrangement of lessons and subjects. They reflect a scientific investigation.",
+          text: "I am happy with their arrangement of lessons and subjects. They reflect a scientific investigation.",
           image: "01",
         },
       ],
