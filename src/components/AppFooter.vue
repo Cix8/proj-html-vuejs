@@ -110,7 +110,6 @@ footer {
       font-size: 3rem;
       margin: 2rem;
       color: #22ad96;
-      justify-self: end;
     }
   }
 }
