@@ -46,20 +46,27 @@
                     : (currentActive = option.id)
                 "
               >
-                <div class="text">
-                  <a>{{ option.title }}</a>
-                </div>
-                <div
-                  class="icon-container"
-                  :class="{ active: currentActive === option.id }"
-                >
+                <div class="option-top">
+                  <div class="text">
+                    <a>{{ option.title }}</a>
+                  </div>
                   <div
-                    class="icon"
-                    :class="
-                      currentActive === option.id ? 'close-icon' : 'add-icon'
-                    "
-                  ></div>
+                    class="icon-container"
+                    :class="{ active: currentActive === option.id }"
+                  >
+                    <div
+                      class="icon"
+                      :class="
+                        currentActive === option.id ? 'close-icon' : 'add-icon'
+                      "
+                    ></div>
+                  </div>
                 </div>
+                <template v-if="currentActive === option.id">
+                  <div class="option-bottom">
+                    <p>{{ option.content }}</p>
+                  </div>
+                </template>
               </li>
             </ul>
           </div>
@@ -393,11 +400,6 @@ main {
         .contents-list {
           ul {
             li {
-              display: flex;
-              justify-content: space-between;
-              align-items: center;
-              padding: 0.7rem 1.3rem;
-              background-color: #fefefe;
               font-weight: bold;
               cursor: pointer;
 
@@ -406,35 +408,57 @@ main {
               }
 
               &.active {
-                border-top-left-radius: 10px;
-                border-top-right-radius: 10px;
-                background-color: #22ad96;
-                color: #fefefe;
+                .option-top {
+                  border-top-left-radius: 10px;
+                  border-top-right-radius: 10px;
+                  background-color: #22ad96;
+                  color: #fefefe;
+                }
               }
 
-              .icon-container {
-                width: 30px;
-                height: 30px;
-                border-radius: 50%;
-                background-color: #959999;
+              .option-top {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0.7rem 1.3rem;
+                background-color: #fefefe;
 
-                &.active {
-                  background-color: #fefefe;
-                }
+                .icon-container {
+                  width: 30px;
+                  height: 30px;
+                  border-radius: 50%;
+                  background-color: #959999;
 
-                .icon {
-                  width: 100%;
-                  height: 100%;
-
-                  &.add-icon {
+                  &.active {
                     background-color: #fefefe;
-                    mask: url("../assets/images/add.svg") no-repeat;
                   }
 
-                  &.close-icon {
-                    background-color: #22ad96;
-                    mask: url("../assets/images/close.svg") no-repeat center;
+                  .icon {
+                    width: 100%;
+                    height: 100%;
+
+                    &.add-icon {
+                      background-color: #fefefe;
+                      mask: url("../assets/images/add.svg") no-repeat;
+                    }
+
+                    &.close-icon {
+                      background-color: #22ad96;
+                      mask: url("../assets/images/close.svg") no-repeat center;
+                    }
                   }
+                }
+              }
+
+              .option-bottom {
+                padding: 2rem 1rem;
+                font-size: 0.9rem;
+                background-color: #fefefe;
+
+                p {
+                  padding: 1rem;
+                  background-color: #f0efef;
+                  color: #3f3a64;
                 }
               }
             }
