@@ -444,8 +444,18 @@ main {
                     }
 
                     &.close-icon {
-                      background-color: #22ad96;
-                      mask: url("../assets/images/close.svg") no-repeat center;
+                      position: relative;
+
+                      &::before {
+                        font: var(--fa-font-solid);
+                        content: "\f068";
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        color: #22ad96;
+                        font-size: 1.2rem;
+                      }
                     }
                   }
                 }
