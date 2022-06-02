@@ -537,7 +537,7 @@ main {
       .col-left {
         .title {
           max-width: 80%;
-          padding: 2rem 2rem 1rem;
+          padding: 2rem 2rem 1rem 1.5rem;
         }
       }
     }
