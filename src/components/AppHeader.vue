@@ -18,7 +18,7 @@
             <li class="cart">
               <i class="fas fa-shopping-cart"></i>
               <div class="cart-items">
-                <small>0</small>
+                <small>{{ theseCartItems.length }}</small>
               </div>
             </li>
             <li class="profile"><i class="far fa-user-circle"></i></li>
@@ -42,6 +42,7 @@ export default {
   name: "AppHeader",
   props: {
     linksArray: Array,
+    theseCartItems: Array,
   },
 };
 </script>
@@ -76,7 +77,7 @@ header {
           display: flex;
 
           &:not(&:first-child) {
-            margin-left: 2rem;
+            margin-left: 1.5rem;
           }
 
           .chevron {

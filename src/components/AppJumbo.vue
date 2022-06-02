@@ -8,8 +8,8 @@
             Complete Your <span>Dreams</span> in <span>JavaS</span> Programming
           </h2>
           <span>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque
-            minus necessitatibus, sint at repellat tempora aut commodi eius.
+            Learn any coding program in distance and for a reasonable fee. You
+            don't have to struggle alone, you've got our assistance and help
           </span>
         </div>
         <div class="btn-container">
@@ -37,7 +37,6 @@ export default {
   position: relative;
   min-height: 500px;
   background-color: #f0efef;
-  word-break: break-all;
   color: #3f3a64;
 
   &_overlay {
@@ -69,7 +68,7 @@ export default {
       padding: 4rem 0 0;
       .text {
         width: 85%;
-        margin-bottom: 1.5rem;
+        margin-bottom: 2rem;
         font-size: 1.9rem;
 
         h2 {
@@ -82,8 +81,8 @@ export default {
           }
         }
         span {
-          font-size: 1.2rem;
-          line-height: 2.8rem;
+          font-size: 1.3rem;
+          line-height: 2.5rem;
         }
       }
 

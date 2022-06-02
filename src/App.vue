@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <AppHeader :linksArray="headerNavLinks" />
+    <AppHeader :linksArray="headerNavLinks" :theseCartItems="cartItems" />
     <AppJumbo />
     <AppMain
       :staringCardsArray="startingCards"
@@ -31,6 +31,7 @@ export default {
   data() {
     return {
       headerNavLinks: ["Home", "Pages", "Courses", "Features", "Blog", "Shop"],
+      cartItems: [],
       startingCards: [
         {
           image: "01",
@@ -331,6 +332,6 @@ export default {
 @import "./style/common.scss";
 
 #app {
-  min-width: 1450px;
+  min-width: 1400px;
 }
 </style>
