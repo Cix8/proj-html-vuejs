@@ -431,11 +431,11 @@ main {
               .option-bottom {
                 padding: 2rem 1rem;
                 font-size: 0.9rem;
-                background-color: #fefefe;
+                background-color: #f0efef;
 
                 p {
                   padding: 1rem;
-                  background-color: #f0efef;
+                  background-color: #fefefe;
                   color: #3f3a64;
                 }
               }
