@@ -19,3 +19,9 @@ $shapeStairsSize: 130px;
     $shapeSquareBulletedSize: calc($shapeSquareBulletedSize - 20px);
     $shapeStairsSize: calc($shapeStairsSize - 20px);
 }
+@if $generalWidth < 70% {
+    $shapeGreySize: calc($shapeGreySize - 60px);
+    $shapeBulletedSize: calc($shapeBulletedSize - 30px);
+    $shapeSquareBulletedSize: calc($shapeSquareBulletedSize - 30px);
+    $shapeStairsSize: calc($shapeStairsSize - 30px);
+}
