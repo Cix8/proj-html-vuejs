@@ -62,11 +62,11 @@ header {
     align-items: center;
 
     .logo-container {
-      width: 200px;
+      width: $logoSize;
     }
 
     nav {
-      width: calc(100% - 200px);
+      width: calc(100% - $logoSize);
       display: flex;
 
       .col-left {

@@ -1,3 +1,21 @@
 $generalWidth: 80%;
 
 $fontSize: calc($generalWidth + 20%);
+
+$logoSize: 200px;
+
+$shapeGreySize: 450px;
+
+$shapeBulletedSize: 230px;
+
+$shapeSquareBulletedSize: 180px;
+
+$shapeStairsSize: 130px;
+
+@if $generalWidth < 80% {
+    $logoSize: calc($logoSize - 50px);
+    $shapeGreySize: calc($shapeGreySize - 50px);
+    $shapeBulletedSize: calc($shapeBulletedSize - 20px);
+    $shapeSquareBulletedSize: calc($shapeSquareBulletedSize - 20px);
+    $shapeStairsSize: calc($shapeStairsSize - 20px);
+}

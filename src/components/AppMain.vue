@@ -569,8 +569,8 @@ main {
       position: absolute;
       top: 35%;
       right: 20%;
-      width: 450px;
-      height: 450px;
+      width: $shapeGreySize;
+      height: $shapeGreySize;
       background-image: url("../assets/images/underlay-shape-grey.svg");
       background-size: cover;
     }
@@ -583,8 +583,8 @@ main {
       background-image: url("../assets/images/maxcoach-shape-05.png");
       background-repeat: no-repeat;
       background-size: cover;
-      width: 230px;
-      height: 230px;
+      width: $shapeBulletedSize;
+      height: $shapeBulletedSize;
     }
 
     .col-left {
@@ -661,8 +661,8 @@ main {
         top: 60%;
         right: 0;
         left: 35%;
-        width: 180px;
-        height: 180px;
+        width: $shapeSquareBulletedSize;
+        height: $shapeSquareBulletedSize;
         background-image: url("../assets/images/maxcoach-shape-07.png");
       }
 
@@ -698,8 +698,8 @@ main {
           position: absolute;
           top: 55%;
           left: -5%;
-          width: 130px;
-          height: 130px;
+          width: $shapeStairsSize;
+          height: $shapeStairsSize;
           background-image: url("../assets/images/maxcoach-shape-01.png");
           background-repeat: no-repeat;
           background-size: contain;
@@ -886,8 +886,8 @@ main {
       position: absolute;
       top: 40%;
       left: 5%;
-      width: 130px;
-      height: 130px;
+      width: $shapeStairsSize;
+      height: $shapeStairsSize;
       background-image: url("../assets/images/maxcoach-shape-01.png");
       background-repeat: no-repeat;
       background-size: contain;
