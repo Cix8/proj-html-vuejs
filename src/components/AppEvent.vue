@@ -11,7 +11,9 @@
       <div class="col-right">
         <div class="date">
           <span class="day">{{ thisEvent.date.day }}</span>
-          <span class="month">{{ thisEvent.date.month.toUpperCase() }}</span>
+          <span class="month">{{
+            thisEvent.date.month.slice(0, 3).toUpperCase()
+          }}</span>
         </div>
         <div class="btn-container">
           <button class="green-btn">

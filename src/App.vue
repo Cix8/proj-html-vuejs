@@ -165,7 +165,7 @@ export default {
           location: "Texas, US",
           date: {
             day: "22",
-            month: "Nov",
+            month: "November",
           },
         },
         {
@@ -173,7 +173,7 @@ export default {
           location: "New York, US",
           date: {
             day: "10",
-            month: "Oct",
+            month: "October",
           },
         },
         {
@@ -181,7 +181,7 @@ export default {
           location: "Hamburg, Germany",
           date: {
             day: "23",
-            month: "Nov",
+            month: "November",
           },
         },
         {
@@ -189,7 +189,7 @@ export default {
           location: "Illinois, US",
           date: {
             day: "15",
-            month: "Dec",
+            month: "December",
           },
         },
         {
@@ -197,7 +197,7 @@ export default {
           location: "Illinois, US",
           date: {
             day: "22",
-            month: "Jul",
+            month: "July",
           },
         },
         {
@@ -205,7 +205,7 @@ export default {
           location: "Dubai",
           date: {
             day: "12",
-            month: "Aug",
+            month: "August",
           },
         },
       ],

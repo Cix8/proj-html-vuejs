@@ -14,9 +14,13 @@
         :alt="thisCard.name"
       />
       <div class="price">
-        <span>{{
-          isNaN(thisCard.price[0]) ? thisCard.price : "$" + thisCard.price
-        }}</span>
+        <template v-if="isNaN(thisCard.price[0])">
+          <span>{{ thisCard.price }}</span>
+        </template>
+        <template v-else>
+          <span>{{ "$" + thisCard.price.split(".")[0] }}.</span>
+          <small>{{ thisCard.price.split(".")[1] }}</small>
+        </template>
       </div>
     </div>
     <div class="card-text">
