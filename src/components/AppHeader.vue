@@ -102,10 +102,6 @@ header {
           font-size: 1.1rem;
 
           li {
-            &:first-child {
-              align-self: flex-end;
-            }
-
             &.cart {
               position: relative;
 
