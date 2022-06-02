@@ -275,7 +275,7 @@ export default {
             name: "Luvic Dubble",
             occupation: "Private Tutor",
             text: "I am free to learn at my own pace, follow my own schedule and choose the subject you like. Great study portal for people like me.",
-            image: "02",
+            image: "01",
           },
           {
             name: "John Smith",
