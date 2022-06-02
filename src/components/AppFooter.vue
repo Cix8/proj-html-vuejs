@@ -5,15 +5,12 @@
         class="container"
         v-for="(item, index) in thisFooterData"
         :key="index"
+        :class="item.title.toLowerCase()"
       >
         <div class="title">
           <h4>{{ item.title }}</h4>
         </div>
-        <ul
-          :class="
-            ({ 'address-list': index === 0 }, { 'explore-list': index === 1 })
-          "
-        >
+        <ul :class="item.title.toLowerCase() + '-list'">
           <li v-for="(link, anotherIndex) in item.links" :key="anotherIndex">
             <a>{{ link }}</a>
           </li>
@@ -56,26 +53,33 @@ footer {
     margin: 0 auto;
     padding: 5rem 2rem;
     display: flex;
-    justify-content: space-between;
 
-    .title {
-      margin-bottom: 1rem;
-    }
-
-    ul {
-      &.explore-list {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        max-height: 100px;
-
-        li {
-          margin: 0 4rem 0.5rem 0;
-        }
+    .container {
+      &.address {
+        min-width: 50%;
       }
 
-      li {
-        margin-bottom: 0.5rem;
+      .title {
+        margin-bottom: 1.5rem;
+      }
+
+      ul {
+        &.explore-list {
+          min-width: 300px;
+          max-height: 130px;
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+
+          li {
+            margin: 0 4rem 1rem 0;
+          }
+        }
+
+        li {
+          color: #959999;
+          margin-bottom: 1rem;
+        }
       }
     }
 
