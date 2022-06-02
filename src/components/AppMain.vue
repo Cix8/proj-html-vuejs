@@ -146,7 +146,7 @@
         </div>
       </div>
     </section>
-    <section class="main-banner reverse">
+    <section class="main-banner reverse horizontal-shape">
       <div class="col-left">
         <div class="title">
           <div class="secondary-title">
@@ -557,9 +557,33 @@ main {
   }
 
   .main-banner {
+    position: relative;
     min-height: 500px;
     display: flex;
     padding-top: 5rem;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 35%;
+      right: 20%;
+      width: 450px;
+      height: 450px;
+      background-image: url("../assets/images/underlay-shape-grey.svg");
+      background-size: cover;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 55%;
+      right: 0;
+      background-image: url("../assets/images/maxcoach-shape-05.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 230px;
+      height: 230px;
+    }
 
     .col-left {
       width: 40%;
@@ -613,6 +637,8 @@ main {
       width: 60%;
 
       .img-container {
+        position: relative;
+        z-index: 2;
         width: 60%;
         margin: 0 auto;
         padding: 2rem 0;
@@ -622,6 +648,21 @@ main {
     &.reverse {
       flex-direction: row-reverse;
       align-items: center;
+
+      &::before {
+        top: 30%;
+        right: 0;
+        left: 2%;
+      }
+
+      &::after {
+        top: 60%;
+        right: 0;
+        left: 35%;
+        width: 180px;
+        height: 180px;
+        background-image: url("../assets/images/maxcoach-shape-07.png");
+      }
 
       .col-left {
         .title {
@@ -650,6 +691,31 @@ main {
       }
 
       .col-right {
+        &::before {
+          content: "";
+          position: absolute;
+          top: 55%;
+          left: -5%;
+          width: 130px;
+          height: 130px;
+          background-image: url("../assets/images/maxcoach-shape-01.png");
+          background-repeat: no-repeat;
+          background-size: contain;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: 30%;
+          left: 45%;
+          width: 50px;
+          height: 50px;
+          transform: translateX(-50%);
+          border: 10px solid #de912a;
+          border-radius: 50%;
+          opacity: 0.5;
+        }
+
         .img-container {
           img {
             width: 80%;
@@ -712,7 +778,7 @@ main {
   .testimonials {
     .top {
       .title {
-        padding: 10rem 0 5rem;
+        padding: 10rem 0 8rem;
         text-align: center;
 
         .secondary-title {
@@ -808,24 +874,63 @@ main {
   }
 
   .small-banner {
+    position: relative;
     padding: 2rem 2rem 5rem;
     text-align: center;
     color: #3f3a64;
 
-    .secondary-title {
-      font-size: 1.2rem;
-      margin-bottom: 0.5rem;
-
-      span {
-        font-weight: lighter;
-        font-size: 1.3rem;
-        color: #22ad96;
-      }
+    &::before {
+      content: "";
+      position: absolute;
+      top: 40%;
+      left: 5%;
+      width: 130px;
+      height: 130px;
+      background-image: url("../assets/images/maxcoach-shape-01.png");
+      background-repeat: no-repeat;
+      background-size: contain;
     }
 
-    .primary-title {
-      margin-bottom: 2rem;
-      font-size: 1.4rem;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 5%;
+      width: 50px;
+      height: 50px;
+      transform: translateX(-50%);
+      border: 10px solid #de912a;
+      border-radius: 50%;
+      opacity: 0.3;
+    }
+
+    .title {
+      &::after {
+        content: "";
+        position: absolute;
+        top: 40%;
+        right: 3%;
+        width: 120px;
+        height: 120px;
+        background-image: url("../assets/images/maxcoach-shape-02.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+      .secondary-title {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+
+        span {
+          font-weight: lighter;
+          font-size: 1.3rem;
+          color: #22ad96;
+        }
+      }
+
+      .primary-title {
+        margin-bottom: 2rem;
+        font-size: 1.4rem;
+      }
     }
 
     .btn-container {
