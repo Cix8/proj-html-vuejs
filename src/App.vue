@@ -332,6 +332,6 @@ export default {
 @import "./style/common.scss";
 
 #app {
-  min-width: 1400px;
+  min-width: 1300px;
 }
 </style>

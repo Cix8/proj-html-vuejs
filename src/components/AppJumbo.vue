@@ -53,7 +53,7 @@ export default {
   .general-container {
     position: relative;
     z-index: 2;
-    width: 75%;
+    width: 80%;
     margin: 0 auto;
     padding: 3rem 0;
     display: flex;
@@ -81,6 +81,8 @@ export default {
           }
         }
         span {
+          display: inline-block;
+          max-width: 90%;
           font-size: 1.3rem;
           line-height: 2.5rem;
         }

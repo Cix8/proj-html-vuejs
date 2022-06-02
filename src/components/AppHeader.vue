@@ -53,7 +53,7 @@ header {
   background-color: #f0efef;
 
   .general-container {
-    width: 75%;
+    width: 80%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
