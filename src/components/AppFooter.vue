@@ -51,7 +51,7 @@ footer {
     position: relative;
     width: 80%;
     margin: 0 auto;
-    padding: 5rem 2rem;
+    padding: 5rem 2rem 3rem;
     display: flex;
 
     .container {
