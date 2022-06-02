@@ -4,9 +4,9 @@
     <div class="general-container">
       <div class="left-col">
         <div class="text">
-          <h2>
+          <h1>
             Complete Your <span>Dreams</span> in <span>JavaS</span> Programming
-          </h2>
+          </h1>
           <span>
             Learn any coding program in distance and for a reasonable fee. You
             don't have to struggle alone, you've got our assistance and help
@@ -73,9 +73,9 @@ export default {
         margin-bottom: 2rem;
         font-size: 1.9rem;
 
-        h2 {
-          max-width: 80%;
-          margin-bottom: 1.5rem;
+        h1 {
+          font-size: 3.1rem;
+          margin-bottom: 2rem;
 
           span {
             font-size: inherit;

@@ -42,3 +42,25 @@ img {
         background-color: #513e5e;
     }
 }
+
+.title {
+    padding: 2rem;
+
+    .secondary-title {
+        margin-bottom: 1.5rem;
+        color: #959999;
+    }
+
+    .primary-title {
+        color: #3f3a64;
+
+        h2 {
+            font-size: 2.8rem;
+        }
+
+        span {
+            font-weight: lighter;
+            color: #22ad96;
+        }
+    }
+}

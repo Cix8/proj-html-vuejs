@@ -7,7 +7,7 @@
         :key="index"
         :class="item.title.toLowerCase()"
       >
-        <div class="title">
+        <div class="list-title">
           <h4>{{ item.title }}</h4>
         </div>
         <ul :class="item.title.toLowerCase() + '-list'">
@@ -61,7 +61,7 @@ footer {
         min-width: 50%;
       }
 
-      .title {
+      .list-title {
         margin-bottom: 1.5rem;
       }
 

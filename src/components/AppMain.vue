@@ -28,10 +28,10 @@
         <div class="top_contents">
           <div class="title">
             <div class="secondary-title">
-              <span>DREAM WITH MAXCOACH</span>
+              <span>DREAM WITH <strong>MAXCOACH</strong></span>
             </div>
             <div class="primary-title">
-              <h2>Construct A <span>STUNNING</span> Career Perspective</h2>
+              <h2>Construct A <span>Stunning</span> Career Perspective</h2>
             </div>
           </div>
           <div class="contents-list">
@@ -209,7 +209,7 @@
             <span>PEOPLE ARE PRAISING MAXCOACH</span>
           </div>
           <div class="primary-title">
-            <h2>What make they <span>Love us?</span></h2>
+            <h2>What make they <span>love us?</span></h2>
           </div>
         </div>
       </div>
@@ -253,9 +253,9 @@
       </div>
     </section>
     <section class="small-banner">
-      <div class="title">
+      <div class="small-banner_title">
         <div class="secondary-title">
-          <h3>Start today for getting <span>Online Certifications</span></h3>
+          <h3>Start today for getting <span>Online Certification</span></h3>
         </div>
         <div class="primary-title">
           <h2>You can be your own guiding star with our help!</h2>
@@ -311,26 +311,7 @@ main {
   .starting {
     padding-top: 3rem;
     text-align: center;
-    .title {
-      padding: 2rem;
-      .secondary-title {
-        margin-bottom: 1.5rem;
-        color: #959999;
-      }
 
-      .primary-title {
-        color: #3f3a64;
-
-        h2 {
-          font-size: 2.5rem;
-        }
-
-        span {
-          font-weight: lighter;
-          color: #22ad96;
-        }
-      }
-    }
     .card-list {
       display: flex;
       justify-content: space-around;
@@ -380,23 +361,7 @@ main {
         background-color: #f0efef;
 
         .title {
-          .secondary-title {
-            margin-bottom: 1.5rem;
-            color: #959999;
-          }
-
-          .primary-title {
-            color: #3f3a64;
-
-            h2 {
-              font-size: 2.5rem;
-            }
-
-            span {
-              font-weight: lighter;
-              color: #22ad96;
-            }
-          }
+          padding: 0;
         }
 
         .contents-list {
@@ -512,25 +477,6 @@ main {
 
     .title {
       text-align: center;
-      padding: 2rem;
-
-      .secondary-title {
-        margin-bottom: 1.5rem;
-        color: #959999;
-      }
-
-      .primary-title {
-        color: #3f3a64;
-
-        h2 {
-          font-size: 2.5rem;
-        }
-
-        span {
-          font-weight: lighter;
-          color: #22ad96;
-        }
-      }
     }
 
     .courses-list {
@@ -587,29 +533,17 @@ main {
       height: $shapeBulletedSize;
     }
 
-    .col-left {
-      width: 40%;
-
-      .title {
-        padding: 2rem;
-        .secondary-title {
-          margin-bottom: 2rem;
-          color: #959999;
-        }
-
-        .primary-title {
-          color: #3f3a64;
-
-          h2 {
-            font-size: 3rem;
-          }
-
-          span {
-            font-weight: lighter;
-            color: #22ad96;
-          }
+    &:not(&.reverse) {
+      .col-left {
+        .title {
+          max-width: 80%;
+          padding: 2rem 2rem 1rem;
         }
       }
+    }
+
+    .col-left {
+      width: 40%;
 
       .options {
         padding: 1rem;
@@ -629,7 +563,7 @@ main {
           padding: 1rem 0.6rem 0;
 
           .green-btn {
-            min-width: 50%;
+            min-width: 55%;
           }
         }
       }
@@ -668,11 +602,7 @@ main {
 
       .col-left {
         .title {
-          padding: 0;
-          .primary-title {
-            font-size: 2.5rem;
-            margin-bottom: 1.5rem;
-          }
+          padding: 1rem 0;
         }
 
         .text {
@@ -732,24 +662,6 @@ main {
       .title {
         padding: 5rem;
         text-align: center;
-
-        .secondary-title {
-          margin-bottom: 2rem;
-          color: #959999;
-        }
-
-        .primary-title {
-          color: #3f3a64;
-
-          h2 {
-            font-size: 3rem;
-          }
-
-          span {
-            font-weight: lighter;
-            color: #22ad96;
-          }
-        }
       }
     }
 
@@ -782,24 +694,6 @@ main {
       .title {
         padding: 10rem 0 8rem;
         text-align: center;
-
-        .secondary-title {
-          margin-bottom: 2rem;
-          color: #959999;
-        }
-
-        .primary-title {
-          color: #3f3a64;
-
-          h2 {
-            font-size: 3rem;
-          }
-
-          span {
-            font-weight: lighter;
-            color: #22ad96;
-          }
-        }
       }
     }
 
@@ -813,7 +707,7 @@ main {
 
           .container {
             position: relative;
-            min-height: 320px;
+            min-height: 330px;
             padding: 0 1rem 2rem;
             text-align: center;
             box-shadow: 10px 10px 50px #959999;
@@ -906,7 +800,7 @@ main {
       opacity: 0.3;
     }
 
-    .title {
+    &_title {
       &::after {
         content: "";
         position: absolute;

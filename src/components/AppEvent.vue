@@ -62,7 +62,6 @@ li {
 
     .col-left {
       max-width: 70%;
-      padding: 1rem;
 
       span {
         display: inline-block;
