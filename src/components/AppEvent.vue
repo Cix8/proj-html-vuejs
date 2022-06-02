@@ -92,7 +92,8 @@ li {
         text-align: center;
 
         .green-btn {
-          padding: 0.5rem 2.5rem;
+          min-width: 150px;
+          padding: 0.5rem 0;
           font-size: 0.9rem;
 
           i {
