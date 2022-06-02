@@ -33,6 +33,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../style/variables.scss";
+
 .jumbo {
   position: relative;
   min-height: 500px;
@@ -53,7 +55,7 @@ export default {
   .general-container {
     position: relative;
     z-index: 2;
-    width: 80%;
+    width: $generalWidth;
     margin: 0 auto;
     padding: 3rem 0;
     display: flex;

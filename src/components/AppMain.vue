@@ -302,8 +302,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../style/variables.scss";
+
 main {
-  width: 80%;
+  width: $generalWidth;
   margin: 0 auto;
 
   .starting {

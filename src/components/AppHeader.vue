@@ -48,12 +48,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../style/variables.scss";
+
 header {
   padding: 1.5rem 0;
   background-color: #f0efef;
 
   .general-container {
-    width: 80%;
+    width: $generalWidth;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;

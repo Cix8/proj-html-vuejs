@@ -46,10 +46,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../style/variables.scss";
+
 footer {
   .footer-contents {
     position: relative;
-    width: 80%;
+    width: $generalWidth;
     margin: 0 auto;
     padding: 5rem 2rem 3rem;
     display: flex;
