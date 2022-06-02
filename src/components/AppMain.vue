@@ -146,7 +146,7 @@
         </div>
       </div>
     </section>
-    <section class="main-banner reverse horizontal-shape">
+    <section class="main-banner reverse">
       <div class="col-left">
         <div class="title">
           <div class="secondary-title">
